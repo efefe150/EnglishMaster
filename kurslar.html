@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnglishMaster Pro - Courses & Modules</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>EnglishMaster</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kurslar.html" class="active">Courses & Modules</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <!-- Modules Section -->
+        <section id="modules-section" class="modules-container">
+            <div class="section-title">
+                <h2>Course Modules & Curriculum</h2>
+                <p>Select a category below and start your practice session right away!</p>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="switchTab('vocab')"><i class="fa-solid fa-book-open"></i> Vocabulary</button>
+                <button class="tab-btn" onclick="switchTab('grammar')"><i class="fa-solid fa-pen-nib"></i> Grammar</button>
+            </div>
+
+            <!-- Module Grid -->
+            <div id="module-list" class="module-grid">
+                <!-- Populated via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Quiz Section (Hidden initially) -->
+        <section id="quiz-section" class="quiz-container hide">
+            <div class="quiz-top-bar">
+                <button id="back-to-modules" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back to Modules</button>
+                <span id="module-title-badge" class="level-indicator">Module Title</span>
+            </div>
+
+            <div id="quiz">
+                <div class="quiz-header">
+                    <span id="question-progress">Question 1 / 30</span>
+                    <span id="score-tracker">Score: 0 / 30 (0 XP)</span>
+                </div>
+                
+                <h2 id="question-text">Loading question...</h2>
+                
+                <div id="answer-buttons" class="btn-grid"></div>
+
+                <div class="quiz-footer">
+                    <button id="next-btn" class="btn-next hide">Next Question</button>
+                </div>
+            </div>
+
+            <!-- Result Container -->
+            <div id="result-container" class="hide">
+                <h2>Congratulations, Module Completed! 🎉</h2>
+                <p id="result-message">Your Final Score: <span id="final-score">0</span> / <span id="total-questions">30</span></p>
+                <p id="xp-earned" class="xp-badge">Earned XP: +10 XP</p>
+                <div class="result-actions">
+                    <button id="restart-btn" class="btn-primary">Try Again (New Questions)</button>
+                    <button onclick="goBackToModules()" class="btn-secondary">Back to Modules</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 EnglishMaster Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>

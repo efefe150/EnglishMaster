@@ -1,0 +1,66 @@
+{
+    "A1": [
+        {
+            "question": "Boşluğa uygun gelen fiili seçiniz: 'I _____ a student.'",
+            "answers": [
+                { "text": "is", "correct": false },
+                { "text": "are", "correct": false },
+                { "text": "am", "correct": true },
+                { "text": "be", "correct": false }
+            ]
+        },
+        {
+            "question": "'Apple' kelimesinin Türkçe karşılığı nedir?",
+            "answers": [
+                { "text": "Armut", "correct": false },
+                { "text": "Elma", "correct": true },
+                { "text": "Muz", "correct": false },
+                { "text": "Çilek", "correct": false }
+            ]
+        }
+    ],
+    "A2": [
+        {
+            "question": "Doğru geçmiş zaman (Past Simple) cümlesini seçiniz:",
+            "answers": [
+                { "text": "I go to cinema yesterday.", "correct": false },
+                { "text": "I went to cinema yesterday.", "correct": true },
+                { "text": "I am going to cinema yesterday.", "correct": false },
+                { "text": "I will go to cinema yesterday.", "correct": false }
+            ]
+        }
+    ],
+    "B1": [
+        {
+            "question": "Doğru Present Perfect Tense cümlesini seçiniz:",
+            "answers": [
+                { "text": "I have visited London three times.", "correct": true },
+                { "text": "I visit London yesterday.", "correct": false },
+                { "text": "I am visiting London now.", "correct": false },
+                { "text": "I will visit London tomorrow.", "correct": false }
+            ]
+        }
+    ],
+    "B2": [
+        {
+            "question": "Passive Voice (Edilgen çatı) cümlesini seçiniz:",
+            "answers": [
+                { "text": "Shakespeare wrote Hamlet.", "correct": false },
+                { "text": "Hamlet was written by Shakespeare.", "correct": true },
+                { "text": "Shakespeare is writing Hamlet.", "correct": false },
+                { "text": "Hamlet has written Shakespeare.", "correct": false }
+            ]
+        }
+    ],
+    "C": [
+        {
+            "question": "İnversion (Devrik yapı) içeren doğru cümle hangisidir?",
+            "answers": [
+                { "text": "Never have I seen such a beautiful view.", "correct": true },
+                { "text": "I have never seen such a beautiful view.", "correct": false },
+                { "text": "Never I have seen such a beautiful view.", "correct": false },
+                { "text": "Have I never seen such a beautiful view.", "correct": false }
+            ]
+        }
+    ]
+}
